@@ -30,7 +30,7 @@ function addTodo(event) {
   completedButton.classList.add("completed-btn");
   todoDiv.appendChild(completedButton);
 
-  //saveLocalTodos(todoInput.value);
+  
 
   const trashButton = document.createElement("button"); //criando botao de apagar o elemento
   trashButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
@@ -93,15 +93,4 @@ function filterTodo(event) {
   });
 }
 
-/*function saveLocalTodos(todo) {
-  let todos;
 
-  if (localStorage.getItem("todos") === null) {
-    todos = [];
-  } else {
-    todos = todo.push(JSON.parse(localStorage.getItem("todos")));
-  }
-
-  localStorage.setItem("todos", JSON.stringify(todos));
-}
-*/
